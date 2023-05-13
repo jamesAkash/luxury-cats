@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background-color: #f0edd4;
+}
+
+.link-button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  padding: 0.75rem 1.375rem;
+  color: initial;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.link-button:hover {
+  transform: translate(1px, 1px);
+}
+
+/* NAVBAR */
+nav a {
+  text-decoration: none;
+  display: block;
+  color: rgba(144, 38, 38, 0.742);
+}
+
+nav a:hover {
+  color: rgb(144, 38, 38);
+}
+
+nav a h1 {
+  color: black;
+  letter-spacing: -2px;
+}
+
+nav {
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-flex {
+  display: flex;
+  gap: 2rem;
+}
+
+/* HOME */
+.home {
+  height: 78vh;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1682685797208-c741d58c2eff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  max-width: 700px;
+  padding: 20px 40px;
+}
+
+.home-container button {
+  width: 100%;
+  padding: 8px 12px;
+  border: 0;
+  outline: 0;
+  color: rgb(254, 230, 230);
+  background-color: rgba(255, 166, 0, 0.751);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.home-container button:hover {
+  background-color: rgba(255, 166, 0, 0.529);
+  color: black;
+}
+
+.home h1,
+.home p {
+  color: white;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  background-color: rgb(44, 44, 44);
+  color: rgb(203, 203, 203);
+  text-align: center;
+  padding: 10px;
+}
+
+footer h3 {
+  font-size: small;
+}
+
+/* ABOUT */
+.about-page-container .about-hero-image {
+  max-width: 100%;
+}
+
+.about-page-content {
+  padding-inline: 23px;
+  color: #161616;
+  margin-bottom: 55px;
+}
+
+.about-page-content h1 {
+  line-height: 38px;
+}
+
+.about-page-content p {
+  line-height: 22px;
+}
+
+.about-page-cta {
+  background-color: #ffcc8d;
+  color: #161616;
+  padding-inline: 32px;
+  padding-bottom: 32px;
+  margin-inline: 27px;
+  border-radius: 5px;
+}
+
+.about-page-cta h2 {
+  margin: 0;
+  padding-block: 37px;
+}
+
+.about-page-cta .link-button {
+  background-color: #161616;
+  color: white;
+  border-radius: 10px;
+}
