@@ -11,7 +11,7 @@ const App = () => {
     <BrowserRouter>
       <nav>
         <Link to="/">
-          <h1>#VansLife</h1>
+          <h1>#ScoobyVan</h1>
         </Link>
         <div className="nav-flex">
           <Link to="/about">About</Link>
