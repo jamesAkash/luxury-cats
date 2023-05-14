@@ -1,11 +1,11 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
   font-family: sans-serif;
   box-sizing: border-box;
   background-color: #f0edd4;
@@ -114,6 +114,18 @@ footer h3 {
 /* ABOUT */
 .about-page-container .about-hero-image {
   max-width: 100%;
+}
+
+.image-container {
+  width: 100vw;
+  height: 200px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.about-hero-image {
+  background-attachment: fixed;
+  background-position: center bottom;
 }
 
 .about-page-content {
@@ -238,4 +250,78 @@ footer h3 {
 
 i[class*="van-type-"] {
   padding: 7px 14px;
+}
+
+/* VAN DETAILS */
+.van-container {
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.van-box {
+  max-width: 920px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #fff; */
+  gap: 20px;
+}
+
+.van-image {
+  max-width: 600px;
+  width: 100%;
+}
+
+.van-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.van-details h1 {
+  margin: 0;
+}
+
+.van-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 200px;
+}
+
+@media (max-width: 840px) {
+  .van-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 70vw;
+    align-items: flex-start;
+  }
+  .van-image {
+    max-width: 350px;
+    max-height: 250px;
+    width: 100%;
+    background-size: cover;
+  }
+}
+
+h1 {
+  font-size: clamp(2rem, 7vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+h3 {
+  font-size: clamp(1rem, 5vw, 2rem);
+}
+
+p {
+  font-size: clamp(0.4rem, 5vw, 1.1rem);
+  margin-bottom: 10px;
 }
