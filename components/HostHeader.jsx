@@ -1,19 +1,43 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const HostHeader = () => {
+  const activeStyle = {
+    backgroundColor: "#e17654",
+    color: "black",
+  };
   return (
     <nav>
       <div className="nav-flex host-nav-flex">
-        <Link className="host-link" to="/host">
+        <NavLink
+          style={({ isActive }) => (isActive ? activeStyle : null)}
+          className="host-link"
+          to="/host"
+          end
+        >
           Dashboard
-        </Link>
-        <Link className="host-link" to="/host/reviews">
+        </NavLink>
+        <NavLink
+          className="host-link"
+          style={({ isActive }) => (isActive ? activeStyle : null)}
+          to="/host/reviews"
+        >
           Reviews
-        </Link>
-        <Link className="host-link" to="/host/income">
+        </NavLink>
+        <NavLink
+          className="host-link"
+          style={({ isActive }) => (isActive ? activeStyle : null)}
+          to="/host/vans"
+        >
+          Vans
+        </NavLink>
+        <NavLink
+          style={({ isActive }) => (isActive ? activeStyle : null)}
+          className="host-link"
+          to="/host/income"
+        >
           Income
-        </Link>
+        </NavLink>
       </div>
     </nav>
   );

@@ -1,15 +1,35 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 const Header = () => {
+  const activeStyle = {
+    fontWeight: "bold",
+    textDecoration: "underline",
+    color: "#161616",
+  };
   return (
     <nav>
       <Link to="/">
         <h1>#ScoobyVan</h1>
       </Link>
       <div className="nav-flex">
-        <Link to="/host">Host</Link>
-        <Link to="/about">About</Link>
-        <Link to="/vans">Vans</Link>
+        <NavLink
+          style={({ isActive }) => (isActive ? activeStyle : null)}
+          to="/host"
+        >
+          Host
+        </NavLink>
+        <NavLink
+          to="/about"
+          style={({ isActive }) => (isActive ? activeStyle : null)}
+        >
+          About
+        </NavLink>
+        <NavLink
+          to="/vans"
+          style={({ isActive }) => (isActive ? activeStyle : null)}
+        >
+          Vans
+        </NavLink>
       </div>
     </nav>
   );
