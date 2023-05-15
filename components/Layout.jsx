@@ -4,13 +4,13 @@ import Header from "./Header";
 
 const Layout = () => {
   return (
-    <>
+    <main>
       <Header />
       <Outlet />
       <footer>
-        <h3>@2022 #VANLIFE</h3>
+        <h3>@2023 #ScoobyVan</h3>
       </footer>
-    </>
+    </main>
   );
 };
 
