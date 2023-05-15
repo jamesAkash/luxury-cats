@@ -10,7 +10,7 @@ const VanDetail = () => {
   );
 
   return (
-    <div className="van-container">
+    <div className="page-container individual">
       <div className="van-box">
         <img className="van-image" src={imageUrl} alt={name} />
         <div className="van-details">

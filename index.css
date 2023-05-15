@@ -486,6 +486,7 @@ p {
 
 /* VAN LISTED */
 .van-host-container {
+  width: 100%;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -521,7 +522,14 @@ p {
 
 .page-container {
   padding: 1.2rem;
-  padding-bottom: 0;
+  /* padding-bottom: 0; */
+}
+
+.page-container .individual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .page {
