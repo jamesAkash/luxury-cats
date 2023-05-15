@@ -11,7 +11,7 @@ const HostListedVans = () => {
       <div className="van-box">
         <img className="van-image" src={imageUrl} alt={name} />
         <div className="van-details">
-          <h1>{name}</h1>
+          <h3>{name}</h3>
           <p>{description}</p>
           <div className="van-end">
             <p>

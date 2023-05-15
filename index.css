@@ -11,6 +11,7 @@ body {
   font-family: sans-serif;
   box-sizing: border-box;
   background-color: #f0edd4;
+  height: 100vh;
 }
 
 .link-button {
@@ -53,7 +54,7 @@ nav {
   align-items: center;
   width: 100%;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .nav-flex {
@@ -124,7 +125,47 @@ footer h3 {
 
 /* ABOUT */
 
-.about-page-container .about-hero-image {
+.page,
+.about-page-container {
+  margin: 0 auto;
+}
+
+.about-page-container {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.about-page-content {
+  background-color: #ececee;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.about-page-cta {
+  background-color: #e17554b5;
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  margin-top: 20px;
+}
+
+.about-page-content h1 {
+  margin-bottom: 20px;
+}
+
+.link-button {
+  background-color: #8a5e05;
+  color: white;
+  margin-top: 20px;
+}
+
+/* .about-page-container .about-hero-image {
   max-width: 100%;
 }
 
@@ -172,7 +213,7 @@ footer h3 {
   background-color: #161616;
   color: white;
   border-radius: 10px;
-}
+} */
 
 /*** VAN PAGES ***/
 .van-list-container {
@@ -195,6 +236,12 @@ footer h3 {
   }
 }
 
+.van-tile {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
 .van-tile a {
   color: #161616;
   text-decoration: none;
@@ -203,6 +250,7 @@ footer h3 {
 .van-tile img {
   max-width: 100%;
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .van-list-container button {
@@ -289,6 +337,8 @@ i[class*="van-type-"] {
   align-items: center;
   /* background-color: #fff; */
   gap: 20px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding: 1rem;
 }
 
 .van-image {
@@ -353,6 +403,8 @@ p {
 
 .host-nav-flex {
   margin-top: 20px;
+  gap: 10px;
+  /* flex-wrap: wrap; */
 }
 
 .host-link {
@@ -360,7 +412,7 @@ p {
   background-color: rgba(0, 0, 0, 0.71);
 
   padding: 4px 8px;
-  font-size: 16px;
+  font-size: 12px;
   border-radius: 2px;
   letter-spacing: 1px;
 }
@@ -385,6 +437,8 @@ p {
   align-items: center;
   gap: 40px;
   cursor: pointer;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 10px;
 }
 
 .van-host-container a {
@@ -411,7 +465,7 @@ p {
 .page {
   margin: 0 auto;
   padding: 2rem 1.5rem;
-  max-width: 1200px;
+  max-width: 1100px;
 }
 
 h1 {
