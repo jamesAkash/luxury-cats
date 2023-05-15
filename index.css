@@ -1,4 +1,6 @@
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -324,6 +326,41 @@ h3 {
 }
 
 p {
-  font-size: clamp(0.4rem, 5vw, 1.1rem);
-  margin-bottom: 10px;
+  font-size: clamp(0.4rem, 6vw, 1.1rem);
+}
+
+/* HOST */
+
+.host-nav-flex {
+  margin-top: 20px;
+}
+
+.host-link {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.71);
+
+  padding: 4px 8px;
+  font-size: 16px;
+  border-radius: 2px;
+  letter-spacing: 1px;
+}
+
+.host-link:hover,
+.host-link:active {
+  color: white;
+  background-color: black;
+}
+
+.page-container {
+  padding: 1.2rem;
+}
+
+.page {
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  max-width: 1200px;
+}
+
+h1 {
+  margin: 0;
 }
