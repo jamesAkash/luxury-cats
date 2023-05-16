@@ -248,6 +248,7 @@ footer h3 {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   padding: 1rem;
   border-radius: 10px;
+  background-color: #fdfeeb;
 }
 
 .van-tile a {
@@ -432,12 +433,23 @@ i[class*="van-type-"] {
   font-size: clamp(6px, 2vw, 12px);
   font-weight: 600;
   letter-spacing: 0.4px;
-  background-color: #33760cbb;
   color: white;
+  background-color: #d3542da3;
   text-transform: uppercase;
   border-radius: 2px;
   margin-left: 12px;
   border: 0;
+}
+
+.filter-div .selected {
+  background-color: #e17654;
+  border: 2px solid black;
+}
+
+.filter-div .clear {
+  background-color: transparent;
+  color: #8a5e05;
+  border: 1px solid black;
 }
 
 h1 {

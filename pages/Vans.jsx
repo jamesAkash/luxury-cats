@@ -35,16 +35,29 @@ export default function Vans() {
       <div className="filter-div">
         <h4>Filter</h4>
         <div>
-          <Link to="?type=simple">simple</Link>
-          <Link to="?type=rugged">rugged</Link>
-          <button onClick={() => setSearchParams({ type: "luxury" })}>
+          {/* <Link to="?type=simple">simple</Link>
+          <Link to="?type=rugged">rugged</Link> */}
+          <button
+            className={typeFilter === "simple" ? "selected" : ""}
+            onClick={() => setSearchParams({ type: "simple" })}
+          >
+            simple
+          </button>
+          <button
+            className={typeFilter === "rugged" ? "selected" : ""}
+            onClick={() => setSearchParams({ type: "rugged" })}
+          >
+            rugged
+          </button>
+
+          <button
+            className={typeFilter === "luxury" ? "selected" : ""}
+            onClick={() => setSearchParams({ type: "luxury" })}
+          >
             luxury
           </button>
           {typeFilter && (
-            <button
-              style={{ backgroundColor: "black" }}
-              onClick={() => setSearchParams({})}
-            >
+            <button className="clear" onClick={() => setSearchParams({})}>
               Clear
             </button>
           )}
