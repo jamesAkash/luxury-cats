@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <nav>
       <Link to="/">
-        <h1 className="logo">#ScoobyVan</h1>
+        <h1 className="logo">#Rent-a-Cat</h1>
       </Link>
       <div className="nav-flex">
         <NavLink
@@ -28,7 +28,7 @@ const Header = () => {
           to="/vans"
           style={({ isActive }) => (isActive ? activeStyle : null)}
         >
-          Vans
+          Cats
         </NavLink>
       </div>
     </nav>

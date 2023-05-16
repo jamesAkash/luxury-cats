@@ -5,13 +5,13 @@ const Home = () => {
   return (
     <div className="home">
       <div className="home-container">
-        <h1>You got the travel plans, we got the travel vans.</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem similique
-          assumenda fuga quos quia molestiae placeat vitae temporibus ullam
-          praesentium.
-        </p>
-        <Link to={"/vans"}>Find your van</Link>
+        <h1>
+          “There are two means of refuge from the miseries of life: music and
+          cats.”
+          <br /> <h3>– Albert Schweitzer</h3>
+        </h1>
+
+        <Link to={"/vans"}>Find your cat</Link>
       </div>
     </div>
   );

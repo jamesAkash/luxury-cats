@@ -7,7 +7,7 @@ const HostListedVans = () => {
   const { imageUrl, name, description, price, type } = van;
   return (
     <div className="heli-container">
-      <Link to="/host/vans">Back to all listed vans</Link>
+      <Link to="/host/vans">Back to all listed cats</Link>
       <div className="heli-center">
         <div
           className="heli-image-container"
@@ -18,7 +18,7 @@ const HostListedVans = () => {
           <p>{description}</p>
           <div className="heli-end">
             <p>
-              ${price}
+              Rs {price * 10}
               <span>/day</span>
             </p>
             <i className={`van-type ${type} selected`}>{type}</i>

@@ -10,8 +10,9 @@ html,
 body {
   font-family: sans-serif;
   box-sizing: border-box;
-  background-color: #f0edd4;
+  background-color: #e8dfca;
   height: 100vh;
+  color: rgb(41, 41, 41);
 }
 
 main {
@@ -73,8 +74,10 @@ nav {
   height: 100vh;
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://images.unsplash.com/photo-1682685797208-c741d58c2eff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.663), rgba(0, 0, 0, 0.482)),
+    url("https://img.freepik.com/free-vector/cats-doodle-pattern-background_53876-100663.jpg?w=1380&t=st=1684258564~exp=1684259164~hmac=ed1988f74bf9b5bd77f11a927bc1877ac589c72e55872757ee17139a2c991571");
+  background-position: center;
   background-size: cover;
 
   background-repeat: no-repeat;
@@ -83,9 +86,13 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   gap: 20px;
   max-width: 700px;
+  max-height: 400px;
   padding: 20px 40px;
+  background-color: transparent;
+  margin: 0 20px;
 }
 
 .home-container a {
@@ -94,16 +101,21 @@ nav {
   width: 100%;
   padding: 8px 12px;
   border: 0;
+  font-weight: 800;
+  font-size: 19px;
+  text-transform: capitalize;
   outline: 0;
-  color: rgb(254, 230, 230);
-  background-color: rgba(255, 166, 0, 0.751);
+  color: rgba(254, 230, 230, 0.993);
+  background-color: rgb(219, 155, 37);
   border-radius: 2px;
   cursor: pointer;
+  transition: letter-spacing 100ms ease-in-out;
 }
 
 .home-container a:hover {
-  background-color: rgba(255, 166, 0, 0.529);
-  color: black;
+  background-color: rgba(255, 166, 0, 0.732);
+  color: rgba(0, 0, 0, 0.79);
+  letter-spacing: 1px;
 }
 
 .home h1,
@@ -151,6 +163,10 @@ footer h3 {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
+.about-page-content p {
+  margin-top: 30px;
+}
+
 .about-page-cta {
   background-color: #e17554b5;
   padding: 2rem;
@@ -172,57 +188,7 @@ footer h3 {
   margin-top: 20px;
 }
 
-/* .about-page-container .about-hero-image {
-  max-width: 100%;
-}
-
-.image-container {
-  width: 100vw;
-  height: 200px;
-  overflow: hidden;
-  padding: 20px;
-}
-
-.about-hero-image {
-  background-attachment: fixed;
-  background-position: center bottom;
-}
-
-.about-page-content {
-  padding-inline: 23px;
-  color: #161616;
-  margin-bottom: 55px;
-}
-
-.about-page-content h1 {
-  line-height: 38px;
-}
-
-.about-page-content p {
-  line-height: 22px;
-}
-
-.about-page-cta {
-  background-color: #ffcc8d;
-  color: #161616;
-  padding-inline: 32px;
-  padding-bottom: 32px;
-  margin-inline: 27px;
-  border-radius: 5px;
-}
-
-.about-page-cta h2 {
-  margin: 0;
-  padding-block: 37px;
-}
-
-.about-page-cta .link-button {
-  background-color: #161616;
-  color: white;
-  border-radius: 10px;
-} */
-
-/*** VAN PAGES ***/
+/*** VAN PAGES - CAT ***/
 .van-list-container {
   padding-inline: 23px;
   max-width: 1100px;
@@ -248,7 +214,10 @@ footer h3 {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   padding: 1rem;
   border-radius: 10px;
-  background-color: #fdfeeb;
+  background-color: #ffffff74;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .van-tile a {
@@ -425,7 +394,7 @@ i[class*="van-type-"] {
 .filter-div a,
 .filter-div button {
   text-decoration: none;
-  color: black;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -433,17 +402,21 @@ i[class*="van-type-"] {
   font-size: clamp(6px, 2vw, 12px);
   font-weight: 600;
   letter-spacing: 0.4px;
-  color: white;
-  background-color: #d3542da3;
+  color: #8a5e05;
+
+  /* background-color: #d3542da3; */
+  background: transparent;
   text-transform: uppercase;
+
   border-radius: 2px;
   margin-left: 12px;
-  border: 0;
+  border: 0.8px solid black;
 }
 
 .filter-div .selected {
   background-color: #e17654;
   border: 2px solid black;
+  color: white;
 }
 
 .filter-div .clear {
@@ -503,7 +476,7 @@ p {
   margin: 0 auto;
 }
 .van-card {
-  background-color: white;
+  background-color: #ffffff9c;
   width: 100%;
   margin: 15px 0;
   padding: 1rem;
@@ -525,7 +498,7 @@ p {
 }
 
 .det {
-  max-width: 150px;
+  /* max-width: 150px; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;

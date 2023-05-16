@@ -29,7 +29,7 @@ const HostHeader = () => {
           style={({ isActive }) => (isActive ? activeStyle : null)}
           to="/host/vans"
         >
-          Vans
+          Cats
         </NavLink>
         <NavLink
           style={({ isActive }) => (isActive ? activeStyle : null)}

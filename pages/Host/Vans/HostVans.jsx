@@ -6,7 +6,7 @@ const HostVans = () => {
   const listedVans = data.filter((van) => van.id <= 3);
   return (
     <div>
-      <h3>Your Listed Vans</h3>
+      <h3>Your Listed Cats</h3>
       <div className="van-host-container">
         {listedVans.map((van) => {
           const { id, name, price, imageUrl } = van;
@@ -16,7 +16,7 @@ const HostVans = () => {
                 <img src={imageUrl} alt={name} />
                 <div className="det">
                   <h4>{name}</h4>
-                  <p>${price}/day</p>
+                  <p>Rs {price * 10}/day</p>
                 </div>
               </div>
             </Link>

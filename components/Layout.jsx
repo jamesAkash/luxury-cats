@@ -8,7 +8,7 @@ const Layout = () => {
       <Header />
       <Outlet />
       <footer>
-        <h3>@2023 #ScoobyVan</h3>
+        <h3>@2023 #Rent-a-Cat</h3>
       </footer>
     </main>
   );

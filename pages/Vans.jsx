@@ -20,7 +20,7 @@ export default function Vans() {
         <div className="van-info">
           <h4>{van.name}</h4>
           <p>
-            ${van.price}
+            Rs {van.price * 10}
             <span>/day</span>
           </p>
         </div>
@@ -31,7 +31,7 @@ export default function Vans() {
 
   return (
     <div className="van-list-container page-container">
-      <h3>Explore our van options</h3>
+      <h3>Explore our cats</h3>
       <div className="filter-div">
         <h4>Filter</h4>
         <div>
