@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import data from "../data";
 
 const VanDetail = () => {
@@ -11,6 +11,9 @@ const VanDetail = () => {
 
   return (
     <div className="page-container individual">
+      <Link to=".." relative="path" className="back-button">
+        Back to Vans
+      </Link>
       <div className="van-box">
         <img className="van-image" src={imageUrl} alt={name} />
         <div className="van-details">

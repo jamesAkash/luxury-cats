@@ -15,7 +15,7 @@ export default function Vans() {
 
   const vanElements = filteredList.map((van) => (
     <div key={van.id} className="van-tile">
-      <Link to={`/vans/${van.id}`}>
+      <Link to={`${van.id}`}>
         <img src={van.imageUrl} />
         <div className="van-info">
           <h4>{van.name}</h4>
@@ -35,19 +35,22 @@ export default function Vans() {
       <div className="filter-div">
         <h4>Filter</h4>
         <div>
-          <button
-            style={{ backgroundColor: "black" }}
-            onClick={() => setSearchParams({})}
-          >
-            Clear
-          </button>
           <Link to="?type=simple">simple</Link>
           <Link to="?type=rugged">rugged</Link>
           <button onClick={() => setSearchParams({ type: "luxury" })}>
             luxury
           </button>
+          {typeFilter && (
+            <button
+              style={{ backgroundColor: "black" }}
+              onClick={() => setSearchParams({})}
+            >
+              Clear
+            </button>
+          )}
         </div>
       </div>
+
       <div className="van-list">{vanElements}</div>
     </div>
   );

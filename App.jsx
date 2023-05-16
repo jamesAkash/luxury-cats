@@ -12,6 +12,7 @@ import HostLayout from "./components/HostLayout";
 import HostVansLayout from "./components/HostVansLayout";
 import HostVans from "./pages/Host/Vans/HostVans";
 import HostListedVans from "./pages/Host/Vans/HostListedVans";
+import Error from "./pages/Error";
 // import { Home, About, Vans } from "./components";
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
+          <Route path="*" element={<Error />} />
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="vans" element={<Vans />} />
