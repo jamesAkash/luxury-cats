@@ -6,14 +6,17 @@ const HostListedVans = () => {
   const van = data.find((van) => van.id === id);
   const { imageUrl, name, description, price, type } = van;
   return (
-    <div className="van-container host-van">
+    <div className="heli-container">
       <Link to="/host/vans">Back to all listed vans</Link>
-      <div className="van-box">
-        <img className="van-image" src={imageUrl} alt={name} />
-        <div className="van-details">
+      <div className="heli-center">
+        <div
+          className="heli-image-container"
+          style={{ backgroundImage: `url(${imageUrl})` }}
+        ></div>
+        <div className="heli-details">
           <h3>{name}</h3>
           <p>{description}</p>
-          <div className="van-end">
+          <div className="heli-end">
             <p>
               ${price}
               <span>/day</span>
