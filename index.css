@@ -378,10 +378,11 @@ i[class*="van-type-"] {
 .filter-div {
   display: flex;
   background-color: #fdfeeb;
+  min-width: 300px;
   max-width: 500px;
   justify-content: space-around;
   align-items: center;
-  padding: 10px 12px;
+  padding: 10px 0;
   margin-top: 10px;
   border-radius: 10px;
 }
@@ -423,6 +424,16 @@ i[class*="van-type-"] {
   background-color: transparent;
   color: #8a5e05;
   border: 1px solid black;
+}
+
+@media (max-width: 400px) {
+  .filter-div h4 {
+    display: none;
+  }
+
+  .van-list {
+    grid-template-columns: 1fr;
+  }
 }
 
 h1 {
